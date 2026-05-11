@@ -10,11 +10,11 @@ from ..utils import (
 from ..utils.traversal import traverse_obj
 
 
-class XiaoHongShuIE(InfoExtractor):
-    _VALID_URL = r'https?://www\.xiaohongshu\.com/(?:explore|discovery/item)/(?P<id>[\da-f]+)'
+class RednoteIE(InfoExtractor):
+    _VALID_URL = r'https?://www\.rednote\.com/(?:explore|discovery/item)/(?P<id>[\da-f]+)'
     IE_DESC = '小红书'
     _TESTS = [{
-        'url': 'https://www.xiaohongshu.com/explore/6411cf99000000001300b6d9',
+        'url': 'https://www.rednote.com/explore/6411cf99000000001300b6d9',
         'md5': '2a87a77ddbedcaeeda8d7eae61b61228',
         'info_dict': {
             'id': '6411cf99000000001300b6d9',
@@ -27,7 +27,7 @@ class XiaoHongShuIE(InfoExtractor):
             'thumbnail': r're:https?://sns-webpic-qc\.xhscdn\.com/\d+/[a-z0-9]+/[\w]+',
         },
     }, {
-        'url': 'https://www.xiaohongshu.com/discovery/item/674051740000000007027a15?xsec_token=CBgeL8Dxd1ZWBhwqRd568gAZ_iwG-9JIf9tnApNmteU2E=',
+        'url': 'https://www.rednote.com/discovery/item/674051740000000007027a15?xsec_token=CBgeL8Dxd1ZWBhwqRd568gAZ_iwG-9JIf9tnApNmteU2E=',
         'info_dict': {
             'id': '674051740000000007027a15',
             'ext': 'mp4',
