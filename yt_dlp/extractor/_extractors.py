@@ -2323,6 +2323,7 @@ from .xhamster import (
     XHamsterUserIE,
 )
 from .xiaohongshu import XiaoHongShuIE
+from .rednote import RedNoteIE
 from .ximalaya import (
     XimalayaAlbumIE,
     XimalayaIE,
